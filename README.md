@@ -16,6 +16,10 @@ Users can add books, search through their collection, view basic statistics, and
 - 🎨 Clean and modern user interface
 - ⚡ Fast development and production build with Vite
 
+## 📸 Screenshot
+
+![Booklist application preview](./screenshots/booklist-preview.png)
+
 ## 🌐 Live Demo
 
 [Open the live application](https://amirkhezry.github.io/booklist/)
