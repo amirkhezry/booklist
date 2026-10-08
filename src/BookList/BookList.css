@@ -1,0 +1,159 @@
+.book-list-section {
+    margin-top: 35px;
+    padding-bottom: 50px;
+}
+
+.book-list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.book-list-heading h2 {
+    font-size: 22px;
+    color: #171717;
+}
+
+.book-list-heading p {
+    margin-top: 5px;
+
+    font-size: 14px;
+    color: #737373;
+}
+
+.book-count {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    background: #f0efff;
+    color: #6c63ff;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.search-box {
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.search-box > svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #a3a3a3;
+
+    font-size: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 16px 0 44px;
+
+    border: 1px solid #e1e1e8;
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #ffffff;
+    color: #171717;
+
+    transition: 0.2s ease;
+}
+
+.search-box input::placeholder {
+    color: #a3a3a3;
+}
+
+.search-box input:focus {
+    border-color: #6c63ff;
+
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+.book-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.empty-state {
+    min-height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 30px;
+
+    background: #ffffff;
+
+    border: 1px dashed #d8d8e2;
+    border-radius: 20px;
+
+    text-align: center;
+
+    color: #a3a3a3;
+
+    animation: fadeIn 0.3s ease;
+}
+
+.empty-state > svg {
+    margin-bottom: 16px;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 12px;
+
+    background: #f0efff;
+
+    border-radius: 14px;
+
+    font-size: 20px;
+
+    color: #6c63ff;
+}
+
+.empty-state h3 {
+    margin-bottom: 7px;
+
+    font-size: 17px;
+
+    color: #404040;
+}
+
+.empty-state p {
+    max-width: 350px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #737373;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

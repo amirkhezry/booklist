@@ -1,0 +1,198 @@
+.add-book {
+    background: #ffffff;
+
+    border: 1px solid #e9e9ef;
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 35px rgba(20, 20, 40, 0.06);
+}
+
+.section-heading {
+    margin-bottom: 26px;
+}
+
+.section-heading h2 {
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #171717;
+}
+
+.section-heading p {
+    margin-top: 6px;
+
+    font-size: 14px;
+    color: #737373;
+}
+
+.book-form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 160px auto;
+
+    gap: 16px;
+
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #404040;
+}
+
+.form-group input {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dddde7;
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #fafafd;
+    color: #171717;
+
+    transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #a3a3a3;
+}
+
+.form-group input:focus {
+    border-color: #6c63ff;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+}
+
+.add-button {
+    height: 46px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #6c63ff;
+    color: white;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.add-button:hover {
+    background: #5a52e0;
+
+    transform: translateY(-1px);
+}
+
+.add-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .book-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-group:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    .add-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .add-book {
+        padding: 22px;
+
+        border-radius: 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .book-form {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .form-group:nth-child(3) {
+        grid-column: auto;
+    }
+
+    .add-button {
+        margin-top: 4px;
+    }
+}
+@media (max-width: 700px) {
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .book-list-section {
+        margin-top: 28px;
+    }
+
+    .book-list-heading {
+        align-items: flex-start;
+    }
+
+    .book-list-heading h2 {
+        font-size: 20px;
+    }
+
+    .book-list-heading p {
+        font-size: 13px;
+    }
+
+    .book-count {
+        padding: 7px 10px;
+    }
+}
+.form-error {
+    margin-top: 14px;
+
+    padding: 10px 12px;
+
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    border-radius: 10px;
+
+    color: #e11d48;
+
+    font-size: 13px;
+    font-weight: 500;
+}
