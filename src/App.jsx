@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Header from "./Header/Header";
-import AddBook from "./AddBook/AddBook";
-import BookList from "./BookList/BookList";
-import Stats from "./Stats/Stats";
+import Header from "./Components/Header/Header";
+import AddBook from "./Components/AddBook/AddBook";
+import BookList from "./Components/BookList/BookList";
+import Stats from "./Components/Stats/Stats";
 import "./App.css";
 
 function App() {
