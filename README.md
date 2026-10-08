@@ -1,16 +1,40 @@
-# React + Vite
+# 📚 AMIR Booklist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive React application for managing a personal book collection.
 
-Currently, two official plugins are available:
+Users can add books, search through their collection, view basic statistics, and remove books. The application stores book data in the browser using LocalStorage, so the collection remains available after refreshing the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 📖 Add books with title, author, and publication year
+- 🔍 Search books by title or author
+- 🗑️ Delete books with confirmation
+- 📊 View collection statistics
+- 💾 Persistent data storage with LocalStorage
+- ✅ Form validation
+- 📱 Responsive design for desktop and mobile
+- 🎨 Clean and modern user interface
+- ⚡ Fast development and production build with Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Built With
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Vite
+- CSS
+- React Icons
+- LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header/
+│   ├── AddBook/
+│   ├── BookList/
+│   ├── BookCard/
+│   └── Stats/
+├── App.jsx
+├── App.css
+└── main.jsx
